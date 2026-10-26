@@ -349,7 +349,7 @@
 
 ## 11. Ракета 🟡
 
-**Ссылки:** [дневник проекта](https://docs.google.com/spreadsheets/d/15HPbW_jGkXGC1wyDEqszo5He3OFV3x3eVZF5gtZMrlY/edit)
+**Ссылки:** [дневник проекта](https://docs.google.com/spreadsheets/d/15HPbW_jGkXGC1wyDEqszo5He3OFV3x3eVZF5gtZMrlY/edit) · [raketa-franchise.ru](https://raketa-franchise.ru) _(найден поиском, сверить с ПМ)_
 
 **Клиент.** Франшиза шаурмичных. Задача — заявки на покупку франшизы, гео — Поволжье. Работаем с 03.09.2026. До этого у клиента был свой кабинет; часть кампаний в нём доработали и затем забрали к себе.
 
@@ -411,7 +411,7 @@
 
 ## 13. Чашка 🟢 / 🟡
 
-**Ссылки:** [дневник проекта](https://docs.google.com/spreadsheets/d/1LSFHob-vk7A49Y0UDNX9DvEpblnMu9C36cQk5cXNBVY/edit?gid=1364260717#gid=1364260717)
+**Ссылки:** [дневник проекта](https://docs.google.com/spreadsheets/d/1LSFHob-vk7A49Y0UDNX9DvEpblnMu9C36cQk5cXNBVY/edit?gid=1364260717#gid=1364260717) · сайт не найден — уточнить у ПМ
 
 **Клиент.** Сеть кафе-кондитерских. Цель — больше гостей во всех точках. Реклама продвигает акции: ланчи, завтраки, −20% на десерты после 19:00, комбо. ЦА — 18–45 лет в радиусе 2–3 км от точки.
 
@@ -432,7 +432,7 @@
 
 ## 14. Мистер Мяо 🟢
 
-**Ссылки:** [дневник проекта](https://docs.google.com/spreadsheets/d/1zd6jfPFSlO1v-4OTWc26z3SuHntu8UkPg9RFwLzn394/edit?pli=1&gid=827497229#gid=827497229)
+**Ссылки:** [дневник проекта](https://docs.google.com/spreadsheets/d/1zd6jfPFSlO1v-4OTWc26z3SuHntu8UkPg9RFwLzn394/edit?pli=1&gid=827497229#gid=827497229) · сайт не найден — уточнить у ПМ
 
 **Клиент.** Кафе вьетнамской кухни (Ижевск), есть доставка. Цель — новые посетители. Только охватный ВК на акции: бизнес-ланчи, «Фо Бо + блюдо + напиток за 600 ₽».
 
@@ -455,7 +455,7 @@
 
 ## 15. Увинская жемчужина 🟢
 
-**Ссылки:** [дневник проекта](https://docs.google.com/spreadsheets/d/1x8B5Us1z2H_C13LLn1ObrGeHIv8yZLTDjNi2s2Y7y8E/edit?gid=1131916228#gid=1131916228)
+**Ссылки:** [дневник проекта](https://docs.google.com/spreadsheets/d/1x8B5Us1z2H_C13LLn1ObrGeHIv8yZLTDjNi2s2Y7y8E/edit?gid=1131916228#gid=1131916228) · [aquality.team](https://aquality.team) _(найден поиском)_
 
 **Клиент.** Производитель питьевой воды (Ува, Удмуртия) с доставкой по Ижевску. Бизнес-цель — рост выручки B2C-доставки: больше активных клиентов, выше средний чек. В сообществе ВК идут акции («Товар недели» −15% и другие).
 
@@ -479,7 +479,7 @@
 
 ## 16. УК Талан — «Талан Тендеры» 🔴
 
-**Ссылки:** [дневник проекта](https://docs.google.com/spreadsheets/d/1qlDJwe1BuFXlcuSVxW8jrfB7FoNtawEJkg8sRnPhsVM/edit?gid=795611023#gid=795611023)
+**Ссылки:** [дневник проекта](https://docs.google.com/spreadsheets/d/1qlDJwe1BuFXlcuSVxW8jrfB7FoNtawEJkg8sRnPhsVM/edit?gid=795611023#gid=795611023) · [тендеры.талан.рф](https://xn--e1aga5afjfm.xn--80aa3agq.xn--p1ai) _(найден поиском, не проверен)_
 
 **Клиент.** Тендерная площадка застройщика «Талан» для поиска подрядчиков и поставщиков: ~2 000 тендеров в год, 13–14 городов. Задача — новые регистрации подрядчиков. Соцсети (ВК, Telegram) создали с нуля. ЦА — тендерные специалисты, руководители стройкомпаний, поставщики. ЛПР — Лариса Фильева.
 
