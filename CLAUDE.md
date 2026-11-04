@@ -60,6 +60,12 @@
 - **Никогда не коммитить логины, пароли, токены и персональные данные клиентов.**
 - Цифры по клиентам брать из первоисточника (дневники, планёрка) и указывать период.
 
+## Регулярный разбор «Светофор»
+
+- По запросу Ираклия («светофор», «что по проектам», «проанализируй дневники») — скилл `.claude/skills/svetofor`: скачать дневники всех проектов и таблицу «Светофор», сравнить последнюю неделю с предыдущей, выдать статус по зонам в чат и сохранить в `notes/svetofor-<дата>.md`.
+- Дневники (xlsx) заполняют таргетологи и контекстологи; «Светофор» (ОПТ) — старший контекстолог.
+- Дневники Удачи, Пекарни и Теремка закрыты по ссылке (на 03.11) — нужен доступ.
+
 ## Скиллы
 
-В `.claude/skills/` лежат маркетинговые скиллы (Apache 2.0, плагин marketing из anthropics/knowledge-work-plugins): `campaign-plan`, `competitive-brief`, `content-creation`, `draft-content`, `brand-review`, `email-sequence`, `performance-report`, `seo-audit`.
+В `.claude/skills/` лежат маркетинговые скиллы (Apache 2.0, плагин marketing из anthropics/knowledge-work-plugins): `campaign-plan`, `competitive-brief`, `content-creation`, `draft-content`, `brand-review`, `email-sequence`, `performance-report`, `seo-audit`. Свой скилл — `svetofor` (еженедельный разбор проектов).
