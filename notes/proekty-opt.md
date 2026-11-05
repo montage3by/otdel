@@ -121,7 +121,7 @@
 
 ## 2. ГК Удача 🟡
 
-**Ссылки:** [дневник проекта](https://docs.google.com/spreadsheets/d/1DrJ85O7UbWMxiN5M_LAMnC-pvP95mm94xVd5UejoF_o/edit?gid=174719430#gid=174719430) · [volodino.ydacha.org](https://volodino.ydacha.org) · [volodino-ydacha.rqch.ru](https://volodino-ydacha.rqch.ru)
+**Ссылки:** [дневник проекта](https://docs.google.com/spreadsheets/d/1g0Zh50fIjuwS_AHfPKIu4jFvBY5Yohry_vc7twjTKi8/edit?gid=1520559417#gid=1520559417) · [volodino.ydacha.org](https://volodino.ydacha.org) · [volodino-ydacha.rqch.ru](https://volodino-ydacha.rqch.ru)
 
 **Клиент.** Застройщик из Твери, на рынке с 2005 года. Продаёт таунхаусы в загородных посёлках в 15–20 минутах от города:
 - **Володино** — основной объект: 79 м² от 6,8 млн ₽, своя УК, насыщенная жизнь посёлка;
@@ -195,7 +195,7 @@
 
 ## 4. Настоящая пекарня 🟢
 
-**Ссылки:** [дневник проекта](https://docs.google.com/spreadsheets/d/1chIVdij3uk1tieAG7tr77TQJBmAiSe8-HU6_cdK4Bg0/edit?gid=1747429367#gid=1747429367) · [realbakery.ru](https://realbakery.ru) · [nastopek.ru](https://nastopek.ru)
+**Ссылки:** [дневник проекта](https://docs.google.com/spreadsheets/d/1itLWFH7meCprXoD5WKvek1AW9-9mX40fZnQOO-7xf_0/edit?gid=306429421#gid=306429421) · [realbakery.ru](https://realbakery.ru) · [nastopek.ru](https://nastopek.ru)
 
 **Клиент.** Франшиза пекарен: 950 точек, 10 лет на рынке, роялти до 3%, обещанная прибыль от 300 тыс. ₽ в месяц. Цель — стать франшизой пекарен №1. Реклама идёт на всю Россию. Клиент давний, с агентством с 2017 года. Сайты — realbakery.ru и nastopek.ru.
 
@@ -226,7 +226,7 @@
 
 ## 5. Теремок 🟢
 
-**Ссылки:** [дневник проекта](https://docs.google.com/spreadsheets/d/1-6am4aUTGK4PHBEItOrvQD7AQXTIK2xzVXdcVjju7ok/edit?gid=376032374#gid=376032374) · [kafe-teremok.com](https://kafe-teremok.com)
+**Ссылки:** [дневник проекта](https://docs.google.com/spreadsheets/d/1BirFFOVVX45NQbQ3FuBvhKFM0-VVOWMI/edit?gid=2074649233#gid=2074649233) · [kafe-teremok.com](https://kafe-teremok.com)
 
 **Клиент.** Семейный ресторан в парке Кирова (Ижевск), 15 лет на рынке. Большая игровая «Терембург», летние веранды, зоны «с детьми / без детей». Проводят свадьбы, выпускные, корпоративы. Цели — узнаваемость, гости в будни, рост выручки и клиентской базы. ЛПР — Александра.
 
