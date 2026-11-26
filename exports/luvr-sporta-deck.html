@@ -1,247 +1,429 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><title>Лувр Спорта — предстратегия</title>
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><title>Лувр Спорта — стратегия продвижения</title>
 <style>
 @page{size:1600px 900px;margin:0}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Inter,Arial,Helvetica,sans-serif;color:#22324F;background:#C9D8E8;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-.s{width:1600px;height:900px;position:relative;overflow:hidden;background:#C9D8E8;page-break-after:always;padding:40px 52px 0}
-.logo{position:absolute;left:52px;top:34px;font-size:26px;font-weight:800;letter-spacing:1px;color:#22324F}
-.logo span{color:#D9733F}
-.client{position:absolute;right:52px;top:30px;border-left:3px solid #22324F;padding-left:16px;font-size:20px;font-weight:700;letter-spacing:2px;line-height:1.2}
-.foot{position:absolute;left:52px;right:52px;bottom:22px;border-top:1px solid #9FB3CB;padding-top:10px;font-size:13px;color:#4F6380;display:flex;justify-content:space-between}
-.eb{margin-top:62px;font-size:14px;font-weight:700;letter-spacing:3px;color:#D9733F;text-transform:uppercase}
-h2{font-size:50px;letter-spacing:-1.5px;line-height:1.1;margin-top:8px}
-.row{display:flex;gap:28px;margin-top:22px;height:640px}
-.card{flex:1;background:#fff;border-radius:22px;border-top:7px solid #D9733F;padding:40px 42px;display:flex;flex-direction:column;justify-content:center}
-.card.dark{background:#2F4260;color:#fff}
-.card h3{font-size:29px;line-height:1.25;margin-bottom:14px}
-.card.dark h3{font-size:38px;letter-spacing:-1px}
-.card p,.card li{font-size:20px;line-height:1.5;color:#3A4B66}
-.card.dark p,.card.dark li{color:#C3D0E2}
-.card .lead{font-size:22px;font-weight:700;color:#22324F}
-.card.dark .lead{color:#fff}
-ul{padding-left:22px}li{margin-bottom:8px}li::marker{color:#D9733F}
-.cols{display:grid;gap:30px}
-.col h4{border-top:5px solid #D9733F;padding-top:14px;font-size:27px;letter-spacing:-.5px;line-height:1.2}
-.col .tag{color:#D9733F;font-weight:700;font-size:17px;margin:6px 0 8px}
-.col p{font-size:18px;line-height:1.5;color:#55677F}
-table{width:100%;border-collapse:collapse;font-size:20px}
-th{text-align:left;font-size:14px;letter-spacing:2px;color:#5D7190;padding:12px 14px;border-bottom:3px solid #D9733F;text-transform:uppercase}
-td{padding:15px 14px;border-bottom:1px solid #DCE4EE;color:#22324F}
-td.r,th.r{text-align:right}
-.note{font-size:16px;color:#5D7190;margin-top:14px;line-height:1.5}
-.bot{font-size:20px;font-weight:700;margin-top:20px;line-height:1.45}
-.step{background:#EEF3F9;border-top:5px solid #D9733F;padding:22px;border-radius:0 0 12px 12px}
-.step h4{font-size:24px;line-height:1.2}
-.step .tag{color:#D9733F;font-weight:700;font-size:15px;letter-spacing:2px;margin-top:6px;text-transform:uppercase}
-.step p{font-size:17px;color:#55677F;margin-top:10px;line-height:1.45}
-.step.dk{background:#2F4260}.step.dk h4{color:#fff}.step.dk p{color:#C3D0E2}
-.big{font-size:64px;font-weight:700;letter-spacing:-2px}
+:root{--ink:#0E1116;--ink2:#171B22;--ink3:#232833;--paper:#F2F0EB;--lime:#D4F03B;--mute:#8C929C;--line:#262B34;--linel:#E0DCD3}
+body{font-family:Inter,Arial,sans-serif;-webkit-print-color-adjust:exact;print-color-adjust:exact;background:#000}
+.s{width:1600px;height:900px;position:relative;overflow:hidden;padding:0 80px;page-break-after:always}
+.dark{background:var(--ink);color:var(--paper)}
+.light{background:var(--paper);color:var(--ink)}
+.hdr{position:absolute;top:40px;left:80px;right:80px;display:flex;justify-content:space-between;align-items:center;font-size:13px;letter-spacing:.18em;text-transform:uppercase}
+.hdr span{opacity:.55}
+.brand{font-family:'Inter Display';font-weight:800;letter-spacing:.08em;font-size:17px;opacity:1!important}
+.brand b{color:var(--lime)}
+.light .brand b{color:var(--ink);background:var(--lime);padding:0 4px;border-radius:3px}
+.ft{position:absolute;bottom:34px;left:80px;right:80px;display:flex;justify-content:space-between;font-size:13px;letter-spacing:.14em;text-transform:uppercase;opacity:.45}
+.kick{display:inline-flex;gap:12px;align-items:center;font-size:15px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+.kick i{width:11px;height:11px;border-radius:50%;background:var(--lime);display:inline-block}
+.light .kick i{box-shadow:0 0 0 1.5px var(--ink)}
+h1,h2,h3,.disp{font-family:'Inter Display',Inter,sans-serif}
+h2{font-weight:700;font-size:66px;line-height:1.02;letter-spacing:-.035em;margin-top:18px}
+.lead{font-size:23px;line-height:1.45;opacity:.68;margin-top:18px}
+.body{position:absolute;top:128px;left:80px;right:80px;bottom:90px}
+.grid{display:grid;gap:18px}
+.card{border-radius:26px;padding:32px}
+.light .card{background:#fff;border:1px solid var(--linel)}
+.dark .card{background:var(--ink2);border:1px solid var(--line)}
+.card h3{font-size:29px;font-weight:700;letter-spacing:-.02em;line-height:1.12}
+.card p{font-size:19px;line-height:1.45;opacity:.68;margin-top:10px}
+.num{font-family:'Inter Display';font-weight:700;font-size:16px;letter-spacing:.1em;opacity:.5}
+.chip{display:inline-flex;align-items:center;gap:10px;padding:12px 20px;border-radius:999px;font-size:18px;font-weight:600;border:1.5px solid currentColor}
+.chip.l{background:var(--lime);color:var(--ink);border-color:var(--lime)}
+.dark .chip{border-color:#3A404B}
+.dark .chip.l{border-color:var(--lime)}
+.lime-t{color:var(--lime)}
+.light .mark{background:var(--lime);padding:0 6px;border-radius:6px}
+.badge{display:inline-block;background:var(--lime);color:var(--ink);font-weight:700;font-size:14px;letter-spacing:.12em;text-transform:uppercase;padding:7px 12px;border-radius:8px}
+table{width:100%;border-collapse:collapse}
+td,th{padding:17px 18px;text-align:left;font-size:21px}
+th{font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;opacity:.5;border-bottom:1px solid #3A404B}
+.dark td{border-bottom:1px solid var(--line)}
+.r{text-align:right}
+.mock{border-radius:22px;background:#fff;color:var(--ink);box-shadow:0 30px 60px rgba(0,0,0,.25)}
 </style></head><body>
 
-<!-- 01 -->
-<section class="s">
-<div class="logo">ОТДЕЛ<span>.</span></div><div class="client">ЛУВР<br>СПОРТА</div>
-<div style="display:flex;gap:50px;margin-top:150px">
+<!-- ============ ПОЛНОЕ КП ============ -->
+
+<!-- Обложка -->
+<section class="s dark full">
+<div class="hdr"><span class="brand">ОТДЕЛ<b>.</b></span><span>Предложение для «Лувр Спорта» · ноябрь 2026</span></div>
+<div class="body" style="display:flex;gap:60px;align-items:center">
+<div style="flex:1.25">
+<div class="kick"><i></i>Стратегия продвижения</div>
+<h1 style="font-size:96px;font-weight:800;line-height:.98;letter-spacing:-.045em;margin-top:26px">От интереса<br>к паделу —<br><span class="lime-t" style="white-space:nowrap">к абонементам</span></h1>
+<div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:46px">
+<span class="chip l">01 VK Ads</span><span class="chip">02 Сайт + SEO/GEO</span><span class="chip">03 Яндекс Директ</span><span class="chip">04 Яндекс Карты</span>
+</div>
+</div>
+<div style="flex:.75;display:flex;justify-content:center">
+<svg width="600" height="620" viewBox="0 0 600 620">
+ <rect x="150" y="20" width="300" height="580" rx="6" fill="#141922" stroke="#D4F03B" stroke-opacity=".9" stroke-width="3"/>
+ <line x1="150" y1="20" x2="450" y2="20" stroke="#D4F03B" stroke-width="9"/>
+ <line x1="150" y1="600" x2="450" y2="600" stroke="#D4F03B" stroke-width="9"/>
+ <line x1="138" y1="310" x2="462" y2="310" stroke="#F2F0EB" stroke-width="4" stroke-dasharray="7 6"/>
+ <line x1="150" y1="108" x2="450" y2="108" stroke="#D4F03B" stroke-opacity=".7" stroke-width="2.5"/>
+ <line x1="150" y1="512" x2="450" y2="512" stroke="#D4F03B" stroke-opacity=".7" stroke-width="2.5"/>
+ <line x1="300" y1="108" x2="300" y2="512" stroke="#D4F03B" stroke-opacity=".7" stroke-width="2.5"/>
+ <circle cx="372" cy="214" r="22" fill="#D4F03B"/>
+ <path d="M354 202 q18 10 36 0" stroke="#0E1116" stroke-width="2.5" fill="none"/>
+ <path d="M354 226 q18 -10 36 0" stroke="#0E1116" stroke-width="2.5" fill="none"/>
+ <path d="M372 236 Q 330 330 240 420" stroke="#D4F03B" stroke-opacity=".35" stroke-width="3" stroke-dasharray="2 10" stroke-linecap="round" fill="none"/>
+ <text x="300" y="640" fill="#8C929C" font-size="15" text-anchor="middle" font-family="Inter" letter-spacing="3" opacity="0"></text>
+</svg>
+</div>
+</div>
+<div class="ft"><span>Лувр Спорта × Отдел</span><span class="pg"></span></div>
+</section>
+
+<!-- Что мешает -->
+<section class="s light full">
+<div class="hdr"><span class="brand">ОТДЕЛ<b>.</b></span><span>Ситуация</span></div>
+<div class="body">
+<div class="kick"><i></i>Что видим</div>
+<h2>Реклама есть, продаж нет.<br>Четыре причины</h2>
+<div class="grid" style="grid-template-columns:repeat(4,1fr);margin-top:56px">
+<div class="card" style="height:330px;display:flex;flex-direction:column;justify-content:space-between"><span class="disp" style="font-size:64px;font-weight:800;letter-spacing:-.04em">01</span><div><h3>Бесплатное занятие вместо продукта</h3><p>Приходят за бесплатным — и уходят</p></div></div>
+<div class="card" style="height:330px;display:flex;flex-direction:column;justify-content:space-between"><span class="disp" style="font-size:64px;font-weight:800;letter-spacing:-.04em">02</span><div><h3>Падел ещё не знают</h3><p>Сначала объясняем игру, потом продаём</p></div></div>
+<div class="card" style="height:330px;display:flex;flex-direction:column;justify-content:space-between"><span class="disp" style="font-size:64px;font-weight:800;letter-spacing:-.04em">03</span><div><h3>Реклама на весь город</h3><p>Клубу нужны соседи: посёлки, ЖК, офисы</p></div></div>
+<div class="card" style="height:330px;display:flex;flex-direction:column;justify-content:space-between;background:var(--ink);color:var(--paper);border-color:var(--ink)"><span class="disp lime-t" style="font-size:64px;font-weight:800;letter-spacing:-.04em">04</span><div><h3>Одно касание</h3><p>Абонемент с первого показа не покупают</p></div></div>
+</div>
+</div>
+<div class="ft"><span>Лувр Спорта × Отдел</span><span class="pg"></span></div>
+</section>
+
+<!-- Продукты -->
+<section class="s dark full">
+<div class="hdr"><span class="brand">ОТДЕЛ<b>.</b></span><span>Продукты</span></div>
+<div class="body">
+<div class="kick"><i></i>Что продаём</div>
+<h2>В рекламе — продукты,<br>а не бесплатная тренировка</h2>
+<div class="grid" style="grid-template-columns:repeat(4,1fr);margin-top:52px">
+<div class="card" style="height:290px;display:flex;flex-direction:column;justify-content:flex-end"><span class="badge" style="align-self:flex-start;margin-bottom:auto">Дети</span><h3>Детская школа</h3><p>Группы по возрастам, абонемент на месяц</p></div>
+<div class="card" style="height:290px;display:flex;flex-direction:column;justify-content:flex-end"><span class="badge" style="align-self:flex-start;margin-bottom:auto">Новички</span><h3>Падел с нуля</h3><p>Курс для взрослых + турнир новичков</p></div>
+<div class="card" style="height:290px;display:flex;flex-direction:column;justify-content:flex-end"><span class="badge" style="align-self:flex-start;margin-bottom:auto">Игроки</span><h3>Клуб и турниры</h3><p>Абонементы, лиги, подбор партнёров</p></div>
+<div class="card" style="height:290px;display:flex;flex-direction:column;justify-content:flex-end"><span class="badge" style="align-self:flex-start;margin-bottom:auto">Компании</span><h3>Корпоративы</h3><p>Турнир для команды + вечер в галерее</p></div>
+</div>
+<p style="margin-top:34px;font-size:24px;font-weight:600">Пробная тренировка — <span class="lime-t">шаг к покупке</span>, а не цель рекламы. Линейку и цены утверждаем вместе.</p>
+</div>
+<div class="ft"><span>Лувр Спорта × Отдел</span><span class="pg"></span></div>
+</section>
+
+<!-- Приоритеты -->
+<section class="s light full">
+<div class="hdr"><span class="brand">ОТДЕЛ<b>.</b></span><span>Каналы</span></div>
+<div class="body">
+<div class="kick"><i></i>Наше предложение</div>
+<h2>Четыре канала — по приоритету</h2>
+<div style="margin-top:44px;border-top:1.5px solid var(--ink)">
+<div style="display:grid;grid-template-columns:140px 420px 1fr;align-items:center;padding:24px 0;border-bottom:1px solid var(--linel)"><span class="disp" style="font-size:56px;font-weight:800;letter-spacing:-.04em"><span class="mark">01</span></span><span class="disp" style="font-size:36px;font-weight:700;letter-spacing:-.02em">VK Ads</span><span style="font-size:23px;opacity:.75">Создаём спрос: видео, точное гео, прогрев до записи</span></div>
+<div style="display:grid;grid-template-columns:140px 420px 1fr;align-items:center;padding:24px 0;border-bottom:1px solid var(--linel)"><span class="disp" style="font-size:56px;font-weight:800;letter-spacing:-.04em">02</span><span class="disp" style="font-size:36px;font-weight:700;letter-spacing:-.02em">Сайт + SEO/GEO</span><span style="font-size:23px;opacity:.75">Фундамент: продаёт продукты и попадает в ответы нейросетей</span></div>
+<div style="display:grid;grid-template-columns:140px 420px 1fr;align-items:center;padding:24px 0;border-bottom:1px solid var(--linel)"><span class="disp" style="font-size:56px;font-weight:800;letter-spacing:-.04em">03</span><span class="disp" style="font-size:36px;font-weight:700;letter-spacing:-.02em">Яндекс Директ</span><span style="font-size:23px;opacity:.75">Забираем готовый спрос: высокочастотные запросы «падел»</span></div>
+<div style="display:grid;grid-template-columns:140px 420px 1fr;align-items:center;padding:24px 0;border-bottom:1px solid var(--linel)"><span class="disp" style="font-size:56px;font-weight:800;letter-spacing:-.04em">04</span><span class="disp" style="font-size:36px;font-weight:700;letter-spacing:-.02em">Яндекс Карты и Бизнес</span><span style="font-size:23px;opacity:.75">«Падел рядом»: карточка, отзывы, запись с карты</span></div>
+</div>
+</div>
+<div class="ft"><span>Лувр Спорта × Отдел</span><span class="pg"></span></div>
+</section>
+
+<!-- VK Ads -->
+<section class="s dark full">
+<div class="hdr"><span class="brand">ОТДЕЛ<b>.</b></span><span>Приоритет 01</span></div>
+<div class="body" style="display:flex;gap:56px">
 <div style="flex:1.1">
-<p class="eb" style="margin:0">Предстратегия · таргетированная реклама VK Ads</p>
-<h1 style="font-size:76px;letter-spacing:-3px;line-height:1.03;margin-top:18px">От интереса к паделу — к проданным абонементам</h1>
-<p style="font-size:26px;color:#5D7190;margin-top:26px;line-height:1.45">Что продаём, кому и где, как прогреваем аудиторию, сколько вкладываем и чего ждём</p>
-<div style="border-top:1px solid #9FB3CB;margin-top:34px;padding-top:22px;font-size:22px;font-weight:700">Лувр Спорта × маркетинговая группа «Отдел»</div>
+<div class="kick"><i></i>01 · VK Ads</div>
+<h2>Спрос там, где клиенты живут и работают</h2>
+<div class="grid" style="grid-template-columns:1fr 1fr;margin-top:40px">
+<div class="card" style="padding:28px"><h3 style="font-size:26px">Видео и клипы</h3><p>Игра за 15 секунд: правила, удары, атмосфера</p></div>
+<div class="card" style="padding:28px"><h3 style="font-size:26px">Точное гео</h3><p>Посёлки и ЖК вдоль Воткинского шоссе</p></div>
+<div class="card" style="padding:28px"><h3 style="font-size:26px">Полигоны по офисам</h3><p>Бизнес-центры — корпоративы и команды</p></div>
+<div class="card" style="padding:28px"><h3 style="font-size:26px">Прогрев</h3><p>Чат-бот VK → запись в yclients → продукт</p></div>
 </div>
-<div style="flex:.9;background:#2F4260;border-radius:22px;color:#fff;padding:56px 50px;height:560px;display:flex;flex-direction:column;justify-content:center">
-<p style="font-size:18px;letter-spacing:3px;color:#F0A27A;font-weight:700">ГАЛЕРЕЯ + МУЛЬТИСПОРТ</p>
-<p class="big" style="margin-top:20px">4 крытых корта</p>
-<p style="font-size:30px;margin-top:6px">для падела круглый год</p>
-<p style="font-size:22px;color:#C3D0E2;margin-top:30px;line-height:1.5">Ижевск, Воткинское шоссе, 170.<br>Сквош, бадминтон, волейбол и галерея современного искусства под одной крышей</p>
-</div></div>
-<div class="foot"><span>Лувр Спорта · предстратегия VK Ads</span><span>01 / 11</span></div>
+</div>
+<div style="flex:.9;display:flex;align-items:flex-end">
+<svg width="620" height="640" viewBox="0 0 620 640">
+ <rect x="0" y="0" width="620" height="640" rx="26" fill="#171B22" stroke="#262B34"/>
+ <g stroke="#262B34" stroke-width="2"><line x1="0" y1="140" x2="620" y2="200"/><line x1="0" y1="380" x2="620" y2="300"/><line x1="160" y1="0" x2="120" y2="640"/><line x1="420" y1="0" x2="470" y2="640"/><line x1="0" y1="540" x2="620" y2="560"/></g>
+ <path d="M40 600 C 200 480, 330 380, 590 70" stroke="#3A404B" stroke-width="14" fill="none" stroke-linecap="round"/>
+ <text x="395" y="300" fill="#8C929C" font-size="15" font-family="Inter" transform="rotate(-50 395 300)">Воткинское ш.</text>
+ <polygon points="420,60 560,40 590,150 470,170" fill="#D4F03B" fill-opacity=".18" stroke="#D4F03B" stroke-width="2"/>
+ <text x="455" y="112" fill="#D4F03B" font-size="19" font-weight="700" font-family="Inter">Орловское</text>
+ <polygon points="240,170 380,150 400,250 270,270" fill="#D4F03B" fill-opacity=".18" stroke="#D4F03B" stroke-width="2"/>
+ <text x="290" y="218" fill="#D4F03B" font-size="19" font-weight="700" font-family="Inter">Берша</text>
+ <polygon points="420,200 560,210 545,300 430,290" fill="#D4F03B" fill-opacity=".12" stroke="#D4F03B" stroke-width="2" stroke-dasharray="6 5"/>
+ <text x="447" y="258" fill="#D4F03B" font-size="17" font-weight="600" font-family="Inter">ЖК рядом</text>
+ <g fill="#F2F0EB" fill-opacity=".08" stroke="#F2F0EB" stroke-opacity=".7" stroke-width="2">
+  <rect x="40" y="420" width="70" height="60" rx="6"/><rect x="130" y="450" width="60" height="70" rx="6"/><rect x="60" y="500" width="55" height="55" rx="6"/></g>
+ <text x="40" y="405" fill="#F2F0EB" font-size="17" font-weight="600" font-family="Inter">Офисы и БЦ</text>
+ <circle cx="310" cy="370" r="44" fill="#D4F03B" fill-opacity=".14"/>
+ <circle cx="310" cy="370" r="16" fill="#D4F03B"/>
+ <text x="338" y="410" fill="#F2F0EB" font-size="18" font-weight="700" font-family="Inter">Лувр Спорта</text>
+ <text x="590" y="615" fill="#8C929C" font-size="13" text-anchor="end" font-family="Inter" letter-spacing="1">СХЕМА, НЕ В МАСШТАБЕ</text>
+</svg>
+</div>
+</div>
+<div class="ft"><span>Лувр Спорта × Отдел</span><span class="pg"></span></div>
 </section>
 
-<!-- 02 -->
-<section class="s">
-<div class="logo">ОТДЕЛ<span>.</span></div><div class="client">ЛУВР<br>СПОРТА</div>
-<p class="eb">01 · Что видим</p><h2>Реклама есть, а продаж нет — дело не в настройках</h2>
-<div class="row">
-<div class="card" style="flex:2;justify-content:flex-start;padding-top:46px">
-<div class="cols" style="grid-template-columns:1fr 1fr;gap:34px 46px">
-<div class="col"><h4>Продаём бесплатное занятие</h4><p>Реклама ведёт на бесплатную первую тренировку. Человек приходит за бесплатным — продукта, который он купит дальше, в рекламе нет.</p></div>
-<div class="col"><h4>Падел пока мало кто знает</h4><p>Большинство не понимает, что это за игра и подходит ли она им. Сначала объясняем и показываем — потом продаём.</p></div>
-<div class="col"><h4>Локация требует точного гео</h4><p>Клуб на Воткинском шоссе. Реклама «на весь Ижевск» тратит деньги на тех, кто не поедет. Ядро — посёлки и ЖК рядом.</p></div>
-<div class="col"><h4>С одного касания не продать</h4><p>Новый вид спорта и абонемент — решение не импульсное. Нужна цепочка касаний: увидел → понял → попробовал → купил.</p></div>
-</div></div>
-<div class="card dark"><h3>Сначала аудит текущих кампаний.</h3><p>Посмотрим, на какие аудитории, офферы и гео уходит бюджет сейчас и сколько стоит запись. От этого отталкиваемся, а не начинаем с нуля.</p></div>
+<!-- VK воронка -->
+<section class="s light full">
+<div class="hdr"><span class="brand">ОТДЕЛ<b>.</b></span><span>Приоритет 01 · VK Ads</span></div>
+<div class="body">
+<div class="kick"><i></i>Воронка</div>
+<h2>Четыре касания до абонемента</h2>
+<div style="margin-top:44px;display:flex;flex-direction:column;gap:12px">
+<div style="width:100%;background:#fff;border:1px solid var(--linel);border-radius:18px;padding:22px 30px;display:flex;justify-content:space-between;align-items:center"><span class="disp" style="font-size:30px;font-weight:700">Знакомство</span><span style="font-size:21px;opacity:.65">видео и клипы</span></div>
+<div style="width:86%;background:#fff;border:1px solid var(--linel);border-radius:18px;padding:22px 30px;display:flex;justify-content:space-between;align-items:center"><span class="disp" style="font-size:30px;font-weight:700">Прогрев</span><span style="font-size:21px;opacity:.65">чат-бот: гайд, расписание</span></div>
+<div style="width:72%;background:#fff;border:1px solid var(--linel);border-radius:18px;padding:22px 30px;display:flex;justify-content:space-between;align-items:center"><span class="disp" style="font-size:30px;font-weight:700">Запись</span><span style="font-size:21px;opacity:.65">yclients</span></div>
+<div style="width:58%;background:var(--ink);color:var(--paper);border-radius:18px;padding:22px 30px;display:flex;justify-content:space-between;align-items:center"><span class="disp" style="font-size:30px;font-weight:700">Покупка</span><span style="font-size:21px;color:var(--lime)">курс · школа · абонемент</span></div>
 </div>
-<div class="foot"><span>Лувр Спорта · предстратегия VK Ads</span><span>02 / 11</span></div>
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:36px;align-items:center"><span style="font-size:15px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;opacity:.55;margin-right:8px">Зимние поводы</span>
+<span class="chip l">Сертификаты к Новому году</span><span class="chip">Корпоративы в декабре</span><span class="chip">Детские интенсивы 2–10 января</span><span class="chip">«Новый год — новый спорт»</span></div>
+</div>
+<div class="ft"><span>Лувр Спорта × Отдел</span><span class="pg"></span></div>
 </section>
 
-<!-- 03 -->
-<section class="s">
-<div class="logo">ОТДЕЛ<span>.</span></div><div class="client">ЛУВР<br>СПОРТА</div>
-<p class="eb">02 · Продукты</p><h2>В рекламе — продукты, а не бесплатная тренировка</h2>
-<div class="row">
-<div class="card" style="flex:2.4">
-<div class="cols" style="grid-template-columns:repeat(4,1fr);gap:26px">
-<div class="col"><h4>Детская школа падела</h4><p class="tag">Родители</p><p>Регулярные группы по возрастам, абонемент на месяц. Альтернатива привычным секциям рядом с домом.</p></div>
-<div class="col"><h4>«Падел с нуля»</h4><p class="tag">Взрослые новички</p><p>Короткий курс: несколько тренировок в группе и турнир новичков в конце. Понятный результат и цена.</p></div>
-<div class="col"><h4>Клуб для играющих</h4><p class="tag">Взрослые</p><p>Абонементы на корты, лиги и турниры выходного дня, подбор партнёров. Здесь — повторные покупки.</p></div>
-<div class="col"><h4>Корпоративы и события</h4><p class="tag">Компании</p><p>Тимбилдинг на кортах и вечер в галерее. Отдельный оффер для HR и руководителей.</p></div>
+<!-- VK прогноз -->
+<section class="s dark full">
+<div class="hdr"><span class="brand">ОТДЕЛ<b>.</b></span><span>Приоритет 01 · VK Ads</span></div>
+<div class="body">
+<div class="kick"><i></i>Прогноз на месяц</div>
+<h2>Три сценария бюджета VK Ads</h2>
+<div class="grid" style="grid-template-columns:repeat(3,1fr);margin-top:48px">
+<div class="card" style="height:400px;display:flex;flex-direction:column"><span class="num">МИНИМАЛЬНЫЙ</span><span class="disp" style="font-size:58px;font-weight:800;letter-spacing:-.04em;margin-top:14px">30 000 ₽</span><p style="margin-top:4px">посёлки и ЖК рядом</p><div style="margin-top:auto;display:flex;gap:30px"><div><div class="disp" style="font-size:40px;font-weight:700">15–40</div><p style="margin-top:2px;font-size:17px">записей</p></div><div><div class="disp" style="font-size:40px;font-weight:700">3–12</div><p style="margin-top:2px;font-size:17px">покупок</p></div></div></div>
+<div class="card" style="height:400px;display:flex;flex-direction:column;background:var(--lime);color:var(--ink);border-color:var(--lime)"><span class="num" style="opacity:.7">БАЗОВЫЙ · РЕКОМЕНДУЕМ</span><span class="disp" style="font-size:58px;font-weight:800;letter-spacing:-.04em;margin-top:14px">50 000 ₽</span><p style="margin-top:4px;opacity:.75">+ Ижевск по интересам</p><div style="margin-top:auto;display:flex;gap:30px"><div><div class="disp" style="font-size:40px;font-weight:700">30–70</div><p style="margin-top:2px;font-size:17px;opacity:.75">записей</p></div><div><div class="disp" style="font-size:40px;font-weight:700">6–20</div><p style="margin-top:2px;font-size:17px;opacity:.75">покупок</p></div></div></div>
+<div class="card" style="height:400px;display:flex;flex-direction:column"><span class="num">РАСШИРЕННЫЙ</span><span class="disp" style="font-size:58px;font-weight:800;letter-spacing:-.04em;margin-top:14px">80 000 ₽</span><p style="margin-top:4px">+ корпоративы и сертификаты</p><div style="margin-top:auto;display:flex;gap:30px"><div><div class="disp" style="font-size:40px;font-weight:700">50–120</div><p style="margin-top:2px;font-size:17px">записей</p></div><div><div class="disp" style="font-size:40px;font-weight:700">10–35</div><p style="margin-top:2px;font-size:17px">покупок</p></div></div></div>
 </div>
-<p class="bot" style="border-top:1px solid #DCE4EE;padding-top:20px;margin-top:34px">Пробная тренировка остаётся — как шаг к покупке: на ней предлагаем курс, школу или абонемент.</p>
+<p style="margin-top:26px;font-size:16px;opacity:.5;line-height:1.5">Оценка до старта: запись 500–1 200 ₽, в покупку переходят 20–30% записей. Сверяем с фактом в yclients через 2 недели. Бюджеты без НДС.</p>
 </div>
-<div class="card dark"><h3>Линейку утверждаем вместе.</h3><p>Состав и цены продуктов — первый шаг стратегии. Под каждый продукт — свой оффер, аудитория и креатив.</p></div>
-</div>
-<div class="foot"><span>Лувр Спорта · предстратегия VK Ads</span><span>03 / 11</span></div>
+<div class="ft"><span>Лувр Спорта × Отдел</span><span class="pg"></span></div>
 </section>
 
-<!-- 04 -->
-<section class="s">
-<div class="logo">ОТДЕЛ<span>.</span></div><div class="client">ЛУВР<br>СПОРТА</div>
-<p class="eb">03 · Аудитории и гео</p><h2>Ставка на соседей клуба, город — точечно</h2>
-<div class="row">
-<div class="card" style="flex:2.2">
-<div class="cols" style="grid-template-columns:1fr 1fr 1fr;gap:30px">
-<div class="col"><h4>Ядро: посёлки и ЖК рядом</h4><p class="tag">Основной бюджет</p><p>Коттеджные посёлки и новые ЖК вдоль Воткинского шоссе — Орловское, Берша и соседние. Семьи с доходом выше среднего, клуб для них — «рядом с домом». Точный список и радиус собираем вместе с вами.</p></div>
-<div class="col"><h4>Ижевск: интересы</h4><p class="tag">Точечно</p><p>Взрослые 25–50: теннис, сквош, фитнес-клубы, горные лыжи, активный отдых. Здесь продаём «новый вид спорта», а не «рядом с домом».</p></div>
-<div class="col"><h4>Компании</h4><p class="tag">Сезон корпоративов</p><p>Руководители, HR, офис-менеджеры. Оффер — корпоратив или тимбилдинг на кортах с вечером в галерее.</p></div>
+<!-- ============ САЙТ (общие слайды + обложка и цены для отдельного КП) ============ -->
+
+<!-- Обложка КП на сайт -->
+<section class="s dark site">
+<div class="hdr"><span class="brand">ОТДЕЛ<b>.</b></span><span>Предложение для «Лувр Спорта» · ноябрь 2026</span></div>
+<div class="body" style="display:flex;gap:60px;align-items:center">
+<div style="flex:1.45">
+<div class="kick"><i></i>Сайт · SEO · GEO</div>
+<h1 style="font-size:78px;font-weight:800;line-height:1;letter-spacing:-.04em;margin-top:26px">Сайт, который продаёт<br>и попадает <span class="lime-t">в ответы<br>нейросетей</span></h1>
+<p class="lead" style="max-width:760px;margin-top:30px"><span class="lime-t" style="font-weight:700;opacity:1">0 ₽</span> — внутренняя SEO-оптимизация при заказе сайта</p>
 </div>
-<p class="bot" style="border-top:1px solid #DCE4EE;padding-top:20px;margin-top:30px">Плюс ретаргетинг: посетители сайта, записавшиеся в yclients, подписчики и досмотревшие видео.</p>
+<div style="flex:.9;display:flex;justify-content:center">
+<div class="mock" style="width:470px;padding:32px">
+<div style="background:#F2F0EB;border-radius:16px;padding:16px 20px;font-size:20px;align-self:flex-end;margin-left:70px">Где поиграть в падел в Ижевске?</div>
+<div style="margin-top:20px;display:flex;gap:14px"><div style="width:38px;height:38px;border-radius:50%;background:var(--ink);flex:none"></div><div style="font-size:19px;line-height:1.5">«Лувр Спорта» — крытые падел-корты на Воткинском шоссе. Пробная тренировка и онлайн-запись.<div style="margin-top:12px;display:inline-block;background:var(--lime);border-radius:8px;padding:4px 10px;font-size:14px;font-weight:700">Источник: сайт клуба</div></div></div>
 </div>
-<div class="card dark"><h3>Свой оффер под каждый посёлок.</h3><p>«Падел у вас за домом» работает сильнее, чем общая реклама на весь город. Для жителей — отдельные условия и детская школа как главный вход.</p></div>
 </div>
-<div class="foot"><span>Лувр Спорта · предстратегия VK Ads</span><span>04 / 11</span></div>
+</div>
+<div class="ft"><span>Лувр Спорта × Отдел</span><span class="pg"></span></div>
 </section>
 
-<!-- 05 -->
-<section class="s">
-<div class="logo">ОТДЕЛ<span>.</span></div><div class="client">ЛУВР<br>СПОРТА</div>
-<p class="eb">04 · Воронка</p><h2>Четыре шага от «что это за игра» до абонемента</h2>
-<div class="row">
-<div class="card" style="flex:2.4;justify-content:center">
-<div class="cols" style="grid-template-columns:repeat(4,1fr);gap:16px">
-<div class="step"><h4>Знакомство</h4><p class="tag">Охват</p><p>Короткие видео: как играют, «правила за 30 секунд», атмосфера клуба и галереи. Цель — чтобы человек понял игру.</p></div>
-<div class="step"><h4>Интерес</h4><p class="tag">Прогрев</p><p>Тем, кто досмотрел, — подписка на чат-бот VK: гайд «Падел с нуля», расписание, подборка для детей.</p></div>
-<div class="step"><h4>Пробная</h4><p class="tag">Запись</p><p>Запись на пробную или первое занятие курса. Онлайн-запись в yclients, напоминания в боте.</p></div>
-<div class="step dk"><h4>Покупка</h4><p class="tag" style="color:#F0A27A">Продукт</p><p>Курс, школа, абонемент. Дальше — турниры, лиги и «приведи друга» для повторных покупок.</p></div>
+<!-- Почему сайт: zero-click -->
+<section class="s light both">
+<div class="hdr"><span class="brand">ОТДЕЛ<b>.</b></span><span><span class="fo">Приоритет 02 · </span>Сайт + SEO/GEO</span></div>
+<div class="body" style="display:flex;gap:60px">
+<div style="flex:1.1">
+<div class="kick"><i></i><span class="fo">02 · </span>Почему сайт — must have</div>
+<h2>Ответ — прямо в поиске.<br>Без перехода на сайт</h2>
+<p class="lead" style="max-width:720px">Всё больше людей спрашивают нейросети и получают ответ сразу в выдаче. В него попадают клубы с сайтом и настроенным SEO.</p>
+<div style="display:flex;flex-direction:column;gap:12px;margin-top:40px">
+<span class="chip" style="align-self:flex-start">Нейро и Алиса в Яндексе</span>
+<span class="chip" style="align-self:flex-start">ChatGPT и другие ассистенты</span>
+<span class="chip l" style="align-self:flex-start">Источник ответа — сайт клуба</span>
 </div>
-<p class="bot" style="margin-top:34px">Человек видит рекламу 3–5 раз до записи — и на каждом шаге получает следующий понятный шаг.</p>
 </div>
-<div class="card dark"><h3>Бюджет — по шагам.</h3><p>~30% — охват и знакомство, ~60% — прогрев и запись, ~10% — ретаргетинг. Пропорции меняем по цифрам первых двух недель.</p></div>
+<div style="flex:.9;display:flex;align-items:center">
+<div class="mock" style="width:100%;padding:36px;border:1px solid var(--linel);box-shadow:0 30px 60px rgba(14,17,22,.12)">
+<div style="font-size:13px;letter-spacing:.16em;text-transform:uppercase;opacity:.45;font-weight:600">Пример ответа</div>
+<div style="background:#F2F0EB;border-radius:16px;padding:16px 20px;font-size:21px;margin-top:16px;margin-left:80px">Где поиграть в падел в Ижевске?</div>
+<div style="margin-top:22px;display:flex;gap:14px"><div style="width:40px;height:40px;border-radius:50%;background:var(--ink);flex:none"></div><div style="font-size:20px;line-height:1.5">«Лувр Спорта» — крытые падел-корты на Воткинском шоссе. Есть пробная тренировка и онлайн-запись.<div style="margin-top:14px;display:inline-block;background:var(--lime);border-radius:8px;padding:5px 12px;font-size:14px;font-weight:700">Источник: сайт клуба</div></div></div>
+<div style="margin-top:26px;border-top:1px solid var(--linel);padding-top:18px;font-size:17px;opacity:.6">Нет сайта и SEO — нейросеть называет другие клубы</div>
 </div>
-<div class="foot"><span>Лувр Спорта · предстратегия VK Ads</span><span>05 / 11</span></div>
+</div>
+</div>
+<div class="ft"><span>Лувр Спорта × Отдел</span><span class="pg"></span></div>
 </section>
 
-<!-- 06 -->
-<section class="s">
-<div class="logo">ОТДЕЛ<span>.</span></div><div class="client">ЛУВР<br>СПОРТА</div>
-<p class="eb">05 · Декабрь и январь</p><h2>Зимний сезон — четыре готовых повода</h2>
-<div class="row">
-<div class="card" style="flex:2.4">
-<div class="cols" style="grid-template-columns:1fr 1fr;gap:34px 46px">
-<div class="col"><h4>Сертификаты в подарок</h4><p class="tag">До 31 декабря</p><p>«Подарите новый спорт»: сертификат на курс или абонемент. Подарок, которого ещё нет у друзей и коллег.</p></div>
-<div class="col"><h4>Корпоративы</h4><p class="tag">Декабрь</p><p>Тимбилдинг-турнир и вечер в галерее для команд. Компании выбирают формат корпоратива прямо сейчас.</p></div>
-<div class="col"><h4>Детские интенсивы на каникулах</h4><p class="tag">2–10 января</p><p>Утренние группы для школьников, пока родители работают или отдыхают. Вход в детскую школу.</p></div>
-<div class="col"><h4>«Новый год — новый спорт»</h4><p class="tag">С 11 января</p><p>Курс «Падел с нуля» для взрослых, которые начинают год с новой привычки.</p></div>
-</div></div>
-<div class="card dark"><h3>Старт — в первую неделю декабря.</h3><p>В декабре аукцион дорожает, а кампаниям нужно время на обучение. Ранний старт — дешевле запись в праздничный сезон.</p></div>
+<!-- Структура сайта -->
+<section class="s dark both">
+<div class="hdr"><span class="brand">ОТДЕЛ<b>.</b></span><span><span class="fo">Приоритет 02 · </span>Сайт + SEO/GEO</span></div>
+<div class="body" style="display:flex;gap:40px">
+<div style="flex:1.35">
+<div class="kick"><i></i>Сайт</div>
+<h2>Каждый продукт — своя страница</h2>
+<div class="grid" style="grid-template-columns:repeat(3,1fr);gap:12px;margin-top:44px">
+<div class="card" style="padding:34px 26px"><h3 style="font-size:24px">Детская школа</h3></div>
+<div class="card" style="padding:34px 26px"><h3 style="font-size:24px">Падел с нуля</h3></div>
+<div class="card" style="padding:34px 26px"><h3 style="font-size:24px">Клуб и турниры</h3></div>
+<div class="card" style="padding:34px 26px"><h3 style="font-size:24px">Корпоративы</h3></div>
+<div class="card" style="padding:34px 26px"><h3 style="font-size:24px">Сертификаты</h3></div>
+<div class="card" style="padding:34px 26px"><h3 style="font-size:24px">Галерея</h3></div>
+<div class="card" style="padding:34px 26px"><h3 style="font-size:24px">Цены и расписание</h3></div>
+<div class="card" style="padding:34px 26px"><h3 style="font-size:24px">Что такое падел</h3></div>
+<div class="card" style="padding:34px 26px;background:var(--lime);color:var(--ink);border-color:var(--lime)"><h3 style="font-size:23px">Запись в yclients</h3></div>
 </div>
-<div class="foot"><span>Лувр Спорта · предстратегия VK Ads</span><span>06 / 11</span></div>
+</div>
+<div style="flex:.85;display:flex;align-items:flex-end">
+<div class="card" style="width:100%;background:var(--lime);color:var(--ink);border-color:var(--lime);padding:40px">
+<div class="disp" style="font-size:96px;font-weight:800;letter-spacing:-.05em;line-height:1">0 ₽</div>
+<h3 style="font-size:30px;margin-top:12px">Внутренняя SEO-оптимизация при заказе сайта</h3>
+<div style="margin-top:22px;display:flex;flex-direction:column;gap:9px;font-size:19px;font-weight:500">
+<span>— структура под запросы</span><span>— мета-теги и микроразметка</span><span>— скорость и мобильная версия</span><span>— Метрика, цели, пиксель VK</span></div>
+</div>
+</div>
+</div>
+<div class="ft"><span>Лувр Спорта × Отдел</span><span class="pg"></span></div>
 </section>
 
-<!-- 07 -->
-<section class="s">
-<div class="logo">ОТДЕЛ<span>.</span></div><div class="client">ЛУВР<br>СПОРТА</div>
-<p class="eb">06 · Каналы</p><h2>Основа — VK Ads, Яндекс — по желанию</h2>
-<div class="row">
-<div class="card dark" style="flex:1.2"><p style="font-size:16px;letter-spacing:3px;color:#F0A27A;font-weight:700">ОСНОВНОЙ КАНАЛ</p><h3 style="margin-top:12px">VK Ads</h3><ul style="margin-top:6px">
-<li>Видео и клипы на знакомство с паделом</li>
-<li>Точное гео по посёлкам и ЖК</li>
-<li>Чат-бот прогрева и лид-формы</li>
-<li>Ретаргетинг и похожие аудитории по базе клиентов</li></ul>
-<p style="margin-top:16px">Здесь ваша аудитория и ваш контент — креативы собираем из него.</p></div>
-<div class="card"><p style="font-size:16px;letter-spacing:3px;color:#D9733F;font-weight:700">ОПЦИЯ</p><h3 style="margin-top:12px">Яндекс Карты и Бизнес</h3><p>Люди ищут «падел», «корты», «сквош» рядом. Карточка с ценами, фото и отзывами плюс продвижение на Картах. Недорогой канал для локального клуба.</p></div>
-<div class="card"><p style="font-size:16px;letter-spacing:3px;color:#D9733F;font-weight:700">ТЕСТ</p><h3 style="margin-top:12px">Яндекс Директ, поиск</h3><p>Только узкие запросы: «падел Ижевск», «корты для падела», «детская секция тенниса». Спрос пока небольшой — запускаем тестом на минимальном бюджете, если готовы.</p></div>
+<!-- SEO + GEO -->
+<section class="s light both">
+<div class="hdr"><span class="brand">ОТДЕЛ<b>.</b></span><span><span class="fo">Приоритет 02 · </span>Сайт + SEO/GEO</span></div>
+<div class="body">
+<div class="kick"><i></i>Отдельная услуга</div>
+<h2>SEO + GEO: в поиске и в ответах нейросетей</h2>
+<div class="grid" style="grid-template-columns:1fr 1fr;margin-top:48px">
+<div class="card" style="padding:40px;height:420px;display:flex;flex-direction:column">
+<span class="badge" style="align-self:flex-start">SEO</span>
+<h3 style="font-size:36px;margin-top:26px">Позиции в поиске</h3>
+<div style="margin-top:22px;display:flex;flex-wrap:wrap;gap:8px"><span class="chip" style="font-size:17px;padding:9px 16px">падел</span><span class="chip" style="font-size:17px;padding:9px 16px">падел Ижевск</span><span class="chip" style="font-size:17px;padding:9px 16px">падел для детей</span><span class="chip" style="font-size:17px;padding:9px 16px">корты</span><span class="chip" style="font-size:17px;padding:9px 16px">сквош</span></div>
+<p style="margin-top:auto;font-size:20px">Семантика, контент под продукты, ссылки, отчёт по позициям</p>
 </div>
-<div class="foot"><span>Лувр Спорта · предстратегия VK Ads</span><span>07 / 11</span></div>
+<div class="card" style="padding:40px;height:420px;display:flex;flex-direction:column;background:var(--ink);color:var(--paper);border-color:var(--ink)">
+<span class="badge" style="align-self:flex-start">GEO</span>
+<h3 style="font-size:36px;margin-top:26px">Ответы нейросетей</h3>
+<div style="margin-top:22px;display:flex;flex-wrap:wrap;gap:8px"><span class="chip" style="font-size:17px;padding:9px 16px;border-color:#3A404B">Нейро</span><span class="chip" style="font-size:17px;padding:9px 16px;border-color:#3A404B">Алиса</span><span class="chip" style="font-size:17px;padding:9px 16px;border-color:#3A404B">ChatGPT</span></div>
+<p style="margin-top:auto;font-size:20px;opacity:.7">FAQ и экспертные ответы, микроразметка, отзывы и упоминания на площадках</p>
+</div>
+</div>
+</div>
+<div class="ft"><span>Лувр Спорта × Отдел</span><span class="pg"></span></div>
 </section>
 
-<!-- 08 -->
-<section class="s">
-<div class="logo">ОТДЕЛ<span>.</span></div><div class="client">ЛУВР<br>СПОРТА</div>
-<p class="eb">07 · Прогноз</p><h2>Три сценария рекламного бюджета на месяц</h2>
-<div class="row"><div class="card" style="justify-content:center">
-<table>
-<tr><th>Сценарий</th><th class="r">Бюджет VK Ads в месяц</th><th class="r">Знакомство и прогрев</th><th class="r">Записи и заявки</th><th class="r">Покупки продуктов</th></tr>
-<tr><td><b>Минимальный</b> · только посёлки и ЖК рядом</td><td class="r">30 000 ₽</td><td class="r">10 000 ₽</td><td class="r">15–40</td><td class="r">3–12</td></tr>
-<tr style="background:#EEF3F9"><td><b>Базовый</b> · посёлки + Ижевск по интересам</td><td class="r"><b>50 000 ₽</b></td><td class="r"><b>15 000 ₽</b></td><td class="r"><b>30–70</b></td><td class="r"><b>6–20</b></td></tr>
-<tr><td><b>Расширенный</b> · + корпоративы и сертификаты</td><td class="r">80 000 ₽</td><td class="r">20 000 ₽</td><td class="r">50–120</td><td class="r">10–35</td></tr>
+<!-- Цены для отдельного КП на сайт -->
+<section class="s dark site">
+<div class="hdr"><span class="brand">ОТДЕЛ<b>.</b></span><span>Стоимость</span></div>
+<div class="body">
+<div class="kick"><i></i>Стоимость</div>
+<h2>Сайт, SEO и GEO</h2>
+<table style="margin-top:44px">
+<tr><th>Услуга</th><th class="r">Стоимость</th></tr>
+<tr><td><b>Сайт на Tilda</b> · страницы продуктов, цены, запись в yclients</td><td class="r disp" style="font-size:28px;font-weight:700">от 50 000 ₽</td></tr>
+<tr><td><b>Внутренняя SEO-оптимизация</b></td><td class="r disp lime-t" style="font-size:28px;font-weight:700">0 ₽ при заказе сайта</td></tr>
+<tr><td><b>SEO-продвижение</b></td><td class="r disp" style="font-size:28px;font-weight:700">от 60 000 ₽/мес</td></tr>
+<tr><td><b>GEO</b> · ответы нейросетей, к SEO</td><td class="r disp" style="font-size:28px;font-weight:700">от 15 000 ₽/мес</td></tr>
 </table>
-<p class="note">Допущения: запись или заявка во VK — 500–1 200 ₽, в покупку курса, школы или абонемента переходят 20–30% записей. Это оценка до старта: точные цифры зависят от ваших цен и того, как администраторы доводят записи до покупки. Бюджеты без НДС и без оплаты ведения.</p>
-<p class="bot">Через 2 недели сверяем прогноз с фактом по yclients и переносим деньги в продукты и аудитории с самой дешёвой продажей.</p>
-</div></div>
-<div class="foot"><span>Лувр Спорта · предстратегия VK Ads</span><span>08 / 11</span></div>
-</section>
-
-<!-- 09 -->
-<section class="s">
-<div class="logo">ОТДЕЛ<span>.</span></div><div class="client">ЛУВР<br>СПОРТА</div>
-<p class="eb">08 · План и правила</p><h2>Как поймём, что реклама работает</h2>
-<div class="row"><div class="card">
-<div class="cols" style="grid-template-columns:repeat(4,1fr);gap:14px">
-<div class="step"><h4>Дни 1–5</h4><p>Аудит текущих кампаний, линейка продуктов и офферов, гео по посёлкам</p></div>
-<div class="step"><h4>Дни 6–10</h4><p>Креативы, чат-бот, метки и пиксель, запуск знакомства и прогрева</p></div>
-<div class="step"><h4>Недели 3–4</h4><p>Записи и первые продажи, чистка аудиторий, сертификаты и корпоративы</p></div>
-<div class="step dk"><h4>Конец месяца</h4><p>Отчёт: цена записи и цена продажи по продуктам и аудиториям</p></div>
+<div style="display:flex;gap:10px;margin-top:40px;align-items:center"><span style="font-size:15px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;opacity:.55;margin-right:8px">Этапы</span><span class="chip">Бриф и структура</span><span class="chip">Дизайн и тексты</span><span class="chip">Запуск с SEO-оптимизацией</span><span class="chip l">SEO + GEO</span></div>
 </div>
-<div class="cols" style="grid-template-columns:1fr 1fr 1fr;gap:40px;margin-top:40px">
-<div><h3 style="font-size:26px">Главный KPI</h3><p>Стоимость проданного продукта — курса, школы, абонемента, корпоратива. Не клики и не бесплатные записи.</p></div>
-<div><h3 style="font-size:26px">Как считаем</h3><p>Метки в ссылках на yclients, отдельные промокоды по каналам, пиксель VK на сайте. Отчёт каждую неделю.</p></div>
-<div><h3 style="font-size:26px">Стоп-правило</h3><p>Оффер или аудитория без записей за 2 недели — выключаем и переносим бюджет.</p></div>
-</div></div></div>
-<div class="foot"><span>Лувр Спорта · предстратегия VK Ads</span><span>09 / 11</span></div>
+<div class="ft"><span>Лувр Спорта × Отдел</span><span class="pg"></span></div>
 </section>
 
-<!-- 10 -->
-<section class="s">
-<div class="logo">ОТДЕЛ<span>.</span></div><div class="client">ЛУВР<br>СПОРТА</div>
-<p class="eb">09 · Что нужно от вас</p><h2>Без этого реклама не покажет результат</h2>
-<div class="row"><div class="card">
-<div class="cols" style="grid-template-columns:1fr 1fr 1fr;gap:34px 46px">
-<div class="col"><h4>Доступ к кабинету VK</h4><p>Статистика текущих кампаний: аудитории, офферы, расход и записи — для аудита.</p></div>
-<div class="col"><h4>Продукты и цены</h4><p>Школа, курсы, абонементы, корпоративы, сертификаты: состав, цены, расписание.</p></div>
-<div class="col"><h4>Видео и фото</h4><p>Игра, тренировки, дети, тренеры, галерея. Короткие ролики с телефона подходят.</p></div>
-<div class="col"><h4>yclients</h4><p>Источник записи в отчётах или еженедельная выгрузка: кто записался и что купил.</p></div>
-<div class="col"><h4>База клиентов</h4><p>Для похожих аудиторий и ретаргетинга — с согласиями на обработку данных.</p></div>
-<div class="col"><h4>Бюджет по графику</h4><p>Пополнение кабинета заранее: остановка рекламы сбивает обучение кампаний.</p></div>
+<!-- ============ ДИРЕКТ, КАРТЫ, ЦЕНЫ ============ -->
+
+<!-- Директ -->
+<section class="s dark full">
+<div class="hdr"><span class="brand">ОТДЕЛ<b>.</b></span><span>Приоритет 03</span></div>
+<div class="body" style="display:flex;gap:56px">
+<div style="flex:1.15">
+<div class="kick"><i></i>03 · Яндекс Директ</div>
+<h2 style="font-size:60px">Падел уже ищут —<br><span class="lime-t">забираем готовый спрос</span></h2>
+<div style="display:flex;flex-direction:column;gap:14px;margin-top:40px;font-size:22px">
+<div style="display:flex;gap:16px"><span class="lime-t disp" style="font-weight:800">→</span><span>Высокочастотные запросы «падел», «падел теннис» — большая точка роста</span></div>
+<div style="display:flex;gap:16px"><span class="lime-t disp" style="font-weight:800">→</span><span>Поиск по Ижевску и посёлкам рядом с клубом</span></div>
+<div style="display:flex;gap:16px"><span class="lime-t disp" style="font-weight:800">→</span><span>РСЯ и ретаргетинг — догоняем тех, кто был на сайте</span></div>
+<div style="display:flex;gap:16px"><span class="lime-t disp" style="font-weight:800">→</span><span>Ведём на страницы продуктов — поэтому после сайта</span></div>
 </div>
-<p class="bot" style="border-top:1px solid #DCE4EE;padding-top:20px;margin-top:30px">И скорость ответа: заявка из рекламы обрабатывается в течение часа, а после пробной тренировки администратор предлагает продукт.</p>
-</div></div>
-<div class="foot"><span>Лувр Спорта · предстратегия VK Ads</span><span>10 / 11</span></div>
+</div>
+<div style="flex:.95;display:flex;align-items:center">
+<div class="mock" style="width:100%;padding:32px">
+<div style="display:flex;align-items:center;gap:14px;border:2px solid #E0DCD3;border-radius:14px;padding:14px 18px;font-size:22px"><span style="width:18px;height:18px;border:3px solid var(--ink);border-radius:50%;display:inline-block"></span>падел ижевск</div>
+<div style="margin-top:26px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;opacity:.45;font-weight:600">Реклама · пример</div>
+<div style="font-size:25px;font-weight:700;color:#1F4FB4;margin-top:8px;line-height:1.3">Падел в Ижевске — крытые корты | Лувр Спорта</div>
+<div style="font-size:16px;color:#2E7D46;margin-top:6px">luvrsporta.ru</div>
+<div style="font-size:19px;margin-top:10px;line-height:1.45;opacity:.8">Круглый год под крышей. Школа для детей, курс для новичков, корпоративы. Запись онлайн.</div>
+<div style="display:flex;gap:8px;margin-top:16px;flex-wrap:wrap"><span style="background:#F2F0EB;border-radius:8px;padding:7px 12px;font-size:16px">Детская школа</span><span style="background:#F2F0EB;border-radius:8px;padding:7px 12px;font-size:16px">Падел с нуля</span><span style="background:var(--lime);border-radius:8px;padding:7px 12px;font-size:16px;font-weight:600">Записаться</span></div>
+</div>
+</div>
+</div>
+<div class="ft"><span>Лувр Спорта × Отдел</span><span class="pg"></span></div>
 </section>
 
-<!-- 11 -->
-<section class="s">
-<div class="logo">ОТДЕЛ<span>.</span></div><div class="client">ЛУВР<br>СПОРТА</div>
-<p class="eb">10 · Стоимость работ</p><h2>Ведение и рекламный бюджет разделены</h2>
-<div class="row">
-<div class="card dark" style="justify-content:flex-start;padding-top:58px">
-<p style="font-size:16px;letter-spacing:3px;color:#F0A27A;font-weight:700">РАБОТА «ОТДЕЛА»</p>
-<table style="margin-top:20px;font-size:22px">
-<tr><td style="color:#fff;border-color:#4A5E7F">Ведение VK Ads</td><td class="r" style="color:#fff;border-color:#4A5E7F"><b>40 000 ₽/мес</b></td></tr>
-<tr><td style="color:#fff;border-color:#4A5E7F">Яндекс Карты и Бизнес — опция</td><td class="r" style="color:#fff;border-color:#4A5E7F"><b>по запросу</b></td></tr>
-<tr><td style="color:#fff;border-color:#4A5E7F">Яндекс Директ, поиск — опция</td><td class="r" style="color:#fff;border-color:#4A5E7F"><b>по запросу</b></td></tr>
+<!-- Карты -->
+<section class="s light full">
+<div class="hdr"><span class="brand">ОТДЕЛ<b>.</b></span><span>Приоритет 04</span></div>
+<div class="body" style="display:flex;gap:56px">
+<div style="flex:1.05">
+<div class="kick"><i></i>04 · Яндекс Карты и Бизнес</div>
+<h2>«Падел рядом» — ищут на картах</h2>
+<div class="grid" style="grid-template-columns:1fr 1fr;margin-top:44px">
+<div class="card" style="padding:28px"><h3 style="font-size:26px">Карточка</h3><p>Фото, цены, расписание</p></div>
+<div class="card" style="padding:28px"><h3 style="font-size:26px">Отзывы</h3><p>Сбор и ответы — рейтинг растёт</p></div>
+<div class="card" style="padding:28px"><h3 style="font-size:26px">Запись с карты</h3><p>Кнопка ведёт в yclients</p></div>
+<div class="card" style="padding:28px;background:var(--ink);color:var(--paper);border-color:var(--ink)"><h3 style="font-size:26px">Продвижение</h3><p>Приоритет в поиске на Картах</p></div>
+</div>
+</div>
+<div style="flex:.95;display:flex;align-items:center">
+<div class="mock" style="width:100%;overflow:hidden;border:1px solid var(--linel);box-shadow:0 30px 60px rgba(14,17,22,.12)">
+<svg width="100%" height="250" viewBox="0 0 600 250" preserveAspectRatio="none" style="display:block;background:#E9E6DF">
+ <g stroke="#fff" stroke-width="10"><line x1="0" y1="60" x2="600" y2="110"/><line x1="0" y1="200" x2="600" y2="170"/><line x1="170" y1="0" x2="140" y2="250"/><line x1="430" y1="0" x2="470" y2="250"/></g>
+ <path d="M300 70 c-26 0 -42 20 -42 40 c0 30 42 70 42 70 s42 -40 42 -70 c0 -20 -16 -40 -42 -40z" fill="#0E1116"/>
+ <circle cx="300" cy="110" r="15" fill="#D4F03B"/>
+</svg>
+<div style="padding:28px 30px">
+<div class="disp" style="font-size:30px;font-weight:700">Лувр Спорта</div>
+<div style="font-size:18px;opacity:.6;margin-top:6px">Падел-клуб · Воткинское шоссе, 170</div>
+<div style="display:flex;gap:10px;margin-top:20px"><span style="background:var(--lime);border-radius:10px;padding:10px 18px;font-size:18px;font-weight:700">Записаться</span><span style="background:#F2F0EB;border-radius:10px;padding:10px 18px;font-size:18px">Маршрут</span><span style="background:#F2F0EB;border-radius:10px;padding:10px 18px;font-size:18px">Отзывы</span></div>
+</div>
+</div>
+</div>
+</div>
+<div class="ft"><span>Лувр Спорта × Отдел</span><span class="pg"></span></div>
+</section>
+
+<!-- Стоимость -->
+<section class="s dark full">
+<div class="hdr"><span class="brand">ОТДЕЛ<b>.</b></span><span>Стоимость</span></div>
+<div class="body">
+<div class="kick"><i></i>Стоимость</div>
+<h2>Работа «Отдела» и рекламный бюджет</h2>
+<table style="margin-top:34px">
+<tr><th style="width:90px">#</th><th>Канал</th><th class="r">Работа «Отдела»</th><th class="r">Рекламный бюджет</th></tr>
+<tr><td class="disp lime-t" style="font-size:24px;font-weight:800">01</td><td><b>VK Ads</b></td><td class="r">40 000 ₽/мес</td><td class="r">30 000–80 000 ₽/мес</td></tr>
+<tr><td class="disp lime-t" style="font-size:24px;font-weight:800">02</td><td><b>Сайт на Tilda</b> + внутренняя SEO-оптимизация</td><td class="r">от 50 000 ₽ · <span class="lime-t">SEO-оптимизация 0 ₽</span></td><td class="r">—</td></tr>
+<tr><td></td><td><b>SEO + GEO</b></td><td class="r">от 60 000 + 15 000 ₽/мес</td><td class="r">—</td></tr>
+<tr><td class="disp lime-t" style="font-size:24px;font-weight:800">03</td><td><b>Яндекс Директ</b></td><td class="r">50 000 ₽/мес</td><td class="r">от 30 000 ₽/мес</td></tr>
+<tr><td class="disp lime-t" style="font-size:24px;font-weight:800">04</td><td><b>Яндекс Карты и Бизнес</b></td><td class="r">от 15 000 ₽/мес</td><td class="r">по тарифу Яндекса</td></tr>
 </table>
-<p style="margin-top:22px">В ведение VK входят: аудит текущих кампаний, стратегия и офферы под продукты, креативы, чат-бот прогрева, настройка аналитики и еженедельный отчёт.</p>
+<div style="margin-top:30px;display:flex;align-items:center;gap:22px;background:var(--lime);color:var(--ink);border-radius:20px;padding:22px 30px"><span class="disp" style="font-size:26px;font-weight:800">Старт</span><span style="font-size:21px;font-weight:500">VK Ads 40 000 ₽/мес + бюджет 50 000 ₽ + сайт от 50 000 ₽ разово</span><span style="margin-left:auto;font-size:15px;opacity:.65">Бюджеты без НДС</span></div>
 </div>
-<div class="card" style="justify-content:flex-start;padding-top:58px">
-<p style="font-size:16px;letter-spacing:3px;color:#D9733F;font-weight:700">БАЗОВЫЙ СЦЕНАРИЙ · МЕСЯЦ</p>
-<table style="margin-top:20px;font-size:22px">
-<tr><td>Ведение VK Ads</td><td class="r">40 000 ₽</td></tr>
-<tr><td>Рекламный бюджет VK</td><td class="r">50 000 ₽</td></tr>
-<tr><td><b>Итого в месяц</b></td><td class="r"><b>90 000 ₽</b></td></tr>
-</table>
-<p class="note">Рекламный бюджет без НДС, оплачивается напрямую на площадку. Прогноз базового сценария — 30–70 записей и 6–20 продаж продуктов в месяц, уточняем после двух недель.</p>
-<p class="bot">Первый шаг — аудит текущих кампаний и созвон по продуктам.</p>
-</div></div>
-<div class="foot"><span>Лувр Спорта · предстратегия VK Ads</span><span>11 / 11</span></div>
+<div class="ft"><span>Лувр Спорта × Отдел</span><span class="pg"></span></div>
 </section>
+
+<!-- Старт -->
+<section class="s light full">
+<div class="hdr"><span class="brand">ОТДЕЛ<b>.</b></span><span>Следующий шаг</span></div>
+<div class="body">
+<div class="kick"><i></i>Как стартуем</div>
+<h2>Первые 10 дней — реклама уже работает</h2>
+<div class="grid" style="grid-template-columns:repeat(3,1fr);margin-top:46px">
+<div class="card" style="height:250px;display:flex;flex-direction:column"><span class="num">НЕДЕЛЯ 1</span><h3 style="margin-top:auto">Аудит текущей рекламы, продукты и офферы</h3></div>
+<div class="card" style="height:250px;display:flex;flex-direction:column;background:var(--ink);color:var(--paper);border-color:var(--ink)"><span class="num lime-t" style="opacity:1">НЕДЕЛЯ 2</span><h3 style="margin-top:auto">Запуск VK Ads: видео, гео, чат-бот</h3></div>
+<div class="card" style="height:250px;display:flex;flex-direction:column"><span class="num">НЕДЕЛИ 2–4</span><h3 style="margin-top:auto">Сайт с SEO-оптимизацией → Директ и Карты</h3></div>
+</div>
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:40px;align-items:center"><span style="font-size:15px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;opacity:.55;margin-right:8px">Нужно от вас</span>
+<span class="chip">Доступ к кабинету VK</span><span class="chip">Продукты и цены</span><span class="chip">Видео тренировок</span><span class="chip">Отчёты yclients</span></div>
+</div>
+<div class="ft"><span>Лувр Спорта × Отдел</span><span class="pg"></span></div>
+</section>
+
+<script>
+(function(){
+ var v = location.hash === '#site' ? 'site' : 'full';
+ document.querySelectorAll('section.s').forEach(function(s){
+  if(!s.classList.contains('both') && !s.classList.contains(v)) s.remove();
+ });
+ if(v==='site') document.querySelectorAll('.fo').forEach(function(e){e.remove()});
+ var ss = document.querySelectorAll('section.s'), n = ss.length;
+ ss.forEach(function(s,i){ var p=s.querySelector('.pg'); if(p) p.textContent=String(i+1).padStart(2,'0')+' / '+String(n).padStart(2,'0'); });
+})();
+</script>
 </body></html>
